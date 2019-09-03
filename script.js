@@ -5,7 +5,7 @@ const svg = d3.select("svg");
 
 const path = d3.geoPath();
 
-d3.json("https://d3js.org/us-10m.v2.json").then(function(us) {
+d3.json("https://cdn.jsdelivr.net/npm/us-atlas@3/counties-10m.json").then(function(us) {
   svg.append("g")
       .attr("class", "counties")
     .selectAll("path")
